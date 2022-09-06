@@ -80,12 +80,6 @@ int main() {
 		sort(value.begin(), value.end(), comp);
 	}
 
-	//for (auto& [key, value] : s_i_to_Person) {
-	//	cout << key << '\n';
-	//	for (const auto person : value) {
-	//		cout << person.ID << ' ' << person.rating << ' ' << person.penalty << '\n';
-	//	}
-	//}
 	
 	multiset <string> ans;
 	for (const auto& [s_i, m_i] : s_i_to_m_i) {
