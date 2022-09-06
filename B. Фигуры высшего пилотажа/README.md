@@ -39,7 +39,94 @@
 Участник считается прошедшим по дисциплине i , если существует строго менее m i участников, подавших заявки на i -ю дисциплину с большим, чем у данного участника, приоритетом (см. условие про сравнение приоритета участников).
 
 
+### Пример 1 ###
 
+Ввод
+```objectivec
+2
+ear_flying,1
+sun_bathing,1
+3
+cheburashka,ear_flying,11,100
+dambo,ear_flying,10,0
+crocodile_gena,sun_bathing,11,10
+
+```
+  
+Вывод
+```objectivec
+cheburashka
+crocodile_gena
+
+```
+
+### Пример 2 ###
+
+Ввод
+```objectivec
+1
+ear_flying,1
+2
+dambo,ear_flying,7,234
+cheburashka,ear_flying,7,123
+
+```
+  
+Вывод
+```objectivec
+cheburashka
+
+```
+
+### Пример 3 ###
+
+Ввод
+```objectivec
+2
+cloud_developer,2
+cloud_hacker,3
+5
+anonymous,cloud_hacker,6,0
+bjarne_stroustrup,cloud_developer,6,1
+julian_assange,cloud_hacker,5,100500
+bill_gates,cloud_developer,3,1
+guccifer,cloud_hacker,2,0
+
+```
+  
+Вывод
+```objectivec
+anonymous
+bill_gates
+bjarne_stroustrup
+guccifer
+julian_assange
+
+```
+
+### Пример 4 ###
+
+Ввод
+```objectivec
+2
+sun_charging,2
+racing,1
+5
+helios,racing,12,135
+acacia,sun_charging,0,5
+cactus,sun_charging,0,1
+ficus,sun_charging,0,4
+palm,sun_charging,0,3
+
+```
+  
+Вывод
+```objectivec
+cactus
+helios
+palm
+
+```
 
 ### Примечания ###
 В первом тестовом примере на дисциплину «ear_ﬂying» претендуют два кандидата — ‘cheburashka’ показал 1 1 приёмов со 1 0 0 единицами штрафа, а ‘dambo’ — 1 0 приёмов с 0 штрафа. В первую очередь сравнение идет по приёмам: 1 1 > 1 0 , поэтому в следующий этап проходит именно ‘cheburashka’. 
