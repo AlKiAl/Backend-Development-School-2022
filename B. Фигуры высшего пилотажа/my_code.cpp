@@ -1,4 +1,4 @@
-// интересный момент в 93 строке
+// интересный момент в 87 строке
 #include<iostream>
 #include<unordered_map>
 #include<vector>
@@ -15,7 +15,7 @@ struct Person {
 };
 
 bool comp(const Person& first, const Person& second) {
-
+	// написать тернарный оператор
 	if (first.rating == second.rating) {
 		return first.penalty < second.penalty;
 	}
