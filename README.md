@@ -1,3 +1,5 @@
+https://github.com/dr1nf3rn0/yandexcup-2020
+
 https://academy.yandex.ru/schools/backend
 
 https://contest.yandex.ru/contest/39665/problems/
